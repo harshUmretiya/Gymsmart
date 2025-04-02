@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSmart</title>
+
+    <link rel="shortcut icon" href="images/fa-icon.png" type="image/x-icon">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Extra Small Devices (Phones) */
+        @media (min-width: 320px) and (max-width: 479px) {
+            .text-5xl {
+                font-size: 2rem;
+            }
+
+            .text-xl {
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
+
+            .responsive-content {
+                margin-top: 7rem !important;
+            }
+
+            .badge {
+                position: absolute;
+                top: 9px;
+                right: 0px;
+            }
+
+            .feature-content {
+                width: 100%;
+                padding-right: 5%;
+            }
+
+            .features {
+                padding: 32px 5%;
+            }
+
+            .workout-tracker {
+                padding: 0rem;
+            }
+
+            .section-title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .testimonial-card{
+                width: 100% !important;
+                left: 0 !important;
+            }
+            .newsletter-content {
+                flex: 1;
+                padding: 0.5rem;
+            }
+            .check-icon {
+                width: 61px;
+                height: 36px;
+            }
+            .hero-content h1{
+                margin-top:267px !important;
+            }
+            .last_section h1{
+                margin-top:10px !important;
+
+            }
+            body{
+                width: 100vw !important;
+                overflow: hidden !important;
+            }
+            .tracker-header {
+                margin-bottom: 0.5rem;
+            }
+            .hero {
+                height: fit-content !important;
+            }
+            #banner-container {
+                height: fit-content;
+            }
+            .feature-icons {
+                width: 100%;
+            }
+            .feature-icon {
+                width: 119px;
+                height: 120px;
+            }
+            .update-tag,
+            .update-date {
+                font-size: 10px;
+            }
+                    
+        }
+
+        /* Small Devices (Phones: 480px - 767px) */
+        @media (min-width: 480px) and (max-width: 767px) {
+            .text-5xl {
+                font-size: 2rem;
+            }
+
+            .text-xl {
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
+
+            .responsive-content {
+                margin-top: 7rem !important;
+            }
+
+            .badge {
+                position: absolute;
+                top: 9px;
+                right: 0px;
+            }
+
+            .feature-content {
+                width: 100%;
+                padding-right: 5%;
+            }
+
+            .features {
+                padding: 32px 5%;
+            }
+
+            .workout-tracker {
+                padding: 0rem;
+            }
+
+            .section-title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .testimonial-card{
+                width: 100% !important;
+                left: 0 !important;
+            }
+            .newsletter-content {
+                flex: 1;
+                padding: 0.5rem;
+            }
+            .check-icon {
+                width: 39px;
+                height: 36px;
+            }
+            .hero-content h1{
+                margin-top:267px !important;
+            }
+            .last_section h1{
+                margin-top:100px !important;
+
+            }
+            body{
+                width: 100vw !important;
+                overflow: hidden !important;
+            }
+            .tracker-header {
+                margin-bottom: 0.5rem;
+            }
+            .hero {
+                height: fit-content !important;
+            }
+            #banner-container {
+                height: fit-content;
+            }
+            .feature-icons {
+                width: 100%;
+            }
+            .feature-icon {
+                width: 119px;
+                height: 120px;
+            }
+        }
+
+        /* Medium Devices (Tablets: 768px - 991px) */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .text-5xl {
+                font-size: 2rem;
+            }
+
+            .text-xl {
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
+
+            .responsive-content {
+                margin-top: 7rem !important;
+            }
+
+            .badge {
+                position: absolute;
+                top: 9px;
+                right: 0px;
+            }
+
+            .feature-content {
+                width: 100%;
+                padding-right: 5%;
+            }
+
+            .features {
+                padding: 32px 5%;
+            }
+
+            .workout-tracker {
+                padding: 0rem;
+            }
+
+            .section-title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .testimonial-card{
+                width: 100% !important;
+                left: 0 !important;
+            }
+            .newsletter-content {
+                flex: 1;
+                padding: 0.5rem;
+            }
+            .check-icon {
+                width: 39px;
+                height: 36px;
+            }
+            .hero-content h1{
+                margin-top:267px !important;
+            }
+            .last_section h1{
+                margin-top:100px !important;
+
+            }
+            body{
+                width: 100vw !important;
+                overflow: hidden !important;
+            }
+            .tracker-header {
+                margin-bottom: 0.5rem;
+            }
+            .hero {
+                height: fit-content !important;
+            }
+            #banner-container {
+                height: fit-content;
+            }
+            .feature-icons {
+                width: 100%;
+            }
+            .feature-icon {
+                width: 119px;
+                height: 120px;
+            }
+        }
+
+        /* Large Devices (Laptops: 992px - 1199px) */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .badge {
+                position: absolute;
+                top: 9px;
+                right: 0px;
+            }
+        }
+
+        /* Extra Large Devices (Desktops: 1200px and above) */
+        @media (min-width: 1200px) {
+            .badge {
+                position: absolute;
+                top: 9px;
+                right: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="nav-menu " style="opacity: 1 !important;">
+        <div class="logo text-2xl font-bold text-blue-500 w-100" style="max-width: 200px;">
+            <img src="images/main-logo.png" class="w-100 h-100" alt>
+        </div>
+        <div class="nav-links d-none d-lg-flex">
+            <a href="#" class="nav-link">Features</a>
+            <a href="#" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+        <div class="d-lg-block d-none">
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <button class="btn cta d-lg-none px-2 py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+              </svg>
+        </button>
+    </nav>
+   
+      
+      <div class="offcanvas offcanvas-start" style="background: rgba(18, 18, 18, 0.8); backdrop-filter: blur(10px);" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class=" flex-wrap" style="opacity: 1 !important;">
+               
+                <div class="nav-links d-flex flex-wrap ">
+
+                    <div class="col-12 text-center">
+                        <a href="#" class="nav-link">Features</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="#" class="nav-link">About</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="#" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 text-center">
+                    <a href="#" class="cta-button mx-auto">Get Started</a>
+                </div>
+            </nav>
+        </div>
+      </div>
+
+    <main>
+        <!-- banner start -->
+
+        <div id="banner-container">
+            <canvas id="header-3d-canvas"></canvas>
+            <div class="feature-overlay flex-wrap mb-5 mb-lg-0">
+                <div class="responsive-content col-12 col-lg-6">
+                    <h1 class="text-5xl font-bold mb-6 text-blue-400">Comprehensive
+                        Gym Management</h1>
+                    <p class="text-xl mb-8 text-gray-200">
+                        Discover how GymSmart transforms your fitness
+                        business with powerful, integrated solutions.
+                    </p>
+                </div>
+                <div class="feature-icons col-12 col-lg-6">
+                    <div class="feature-icon" data-feature="member">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>Member Management</span>
+                    </div>
+                    <div class="feature-icon" data-feature="tracking">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <span>Performance Tracking</span>
+                    </div>
+                    <div class="feature-icon" data-feature="equipment">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Equipment Management</span>
+                    </div>
+                    <div class="feature-icon" data-feature="billing">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
+                        <span>Billing Management</span>
+                    </div>
+                    <div class="feature-icon" data-feature="scheduling">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>Class Scheduling</span>
+                    </div>
+                    <div class="feature-icon" data-feature="analytics">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20v-6"></path>
+                            <path d="M6 20V10"></path>
+                            <path d="M18 20V4"></path>
+                        </svg>
+                        <span>Advanced Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- banner end -->
+
+        <!-- customer logo start -->
+
+        <section>
+            <div class="marquee-container">
+                <h2 class="marquee-title">Trusted by 2000+
+                    Fitnepreneurs</h2>
+
+                <div class="marquee-content">
+                    <div class="logo-wrapper">
+                        <img src="images/logo-1.jpg" alt="Fitnepreneur Logo 1">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-2.jpg" alt="Fitnepreneur Logo 2">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-3.jpg" alt="Fitnepreneur Logo 3">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-4.jpg" alt="Fitnepreneur Logo 4">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-5.jpg" alt="Fitnepreneur Logo 5">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-6.jpg" alt="Fitnepreneur Logo 6">
+                    </div>
+
+                    <div class="logo-wrapper">
+                        <img src="images/logo-7.jpg" alt="Fitnepreneur Logo 1">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-8.jpg" alt="Fitnepreneur Logo 2">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-9.jpg" alt="Fitnepreneur Logo 3">
+                    </div>
+                    <div class="logo-wrapper">
+                        <img src="images/logo-10.png" alt="Fitnepreneur Logo 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer logo ENd -->
+
+        <!-- benifits start -->
+
+        <section class="benefits-wrapper">
+            <canvas id="benefits-canvas"></canvas>
+            <div class="benefits-container">
+                <div class="benefits-title">
+                    <h2>Why Choose GymSmart?</h2>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">💪</div>
+                            <h3>Personalized Coaching</h3>
+                            <p>Get tailored workout plans designed
+                                specifically for your fitness goals and body
+                                type.</p>
+                        </div>
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">🧠</div>
+                            <h3>Smart Tracking</h3>
+                            <p>Advanced AI-powered progress tracking and
+                                real-time performance analytics.</p>
+                        </div>
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">🌐</div>
+                            <h3>Global Community</h3>
+                            <p>Connect with fitness enthusiasts worldwide,
+                                share achievements, and stay motivated.</p>
+                        </div>
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">⏰</div>
+                            <h3>Flexible Scheduling</h3>
+                            <p>Workout anytime, anywhere with our adaptable
+                                online and offline training options.</p>
+                        </div>
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">💪</div>
+                            <h3>Personalized Coaching</h3>
+                            <p>Get tailored workout plans designed
+                                specifically for your fitness goals and body
+                                type.</p>
+                        </div>
+                        <div class="benefit-card d-flex- align-items-center m-3">
+                            <div class="card-overlay"></div>
+                            <div class="benefit-icon mx-auto mx-lg-0">🧠</div>
+                            <h3>Smart Tracking</h3>
+                            <p>Advanced AI-powered progress tracking and
+                                real-time performance analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- benifits End -->
+
+        <!-- customer review start -->
+
+        <section class="customer-review-section">
+            <div class="floating-bubbles d-none"></div>
+
+            <div class="container">
+                <div class="reviews-header">
+                    <h1>What Our Customers Say</h1>
+                    <p>Discover why people love our products through their
+                        authentic experiences and honest feedback.</p>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">S</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Sarah
+                                            Johnson</div>
+                                        <div class="review-card__date">March
+                                            2,
+                                            2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    Absolutely amazing product! The quality
+                                    exceeded my expectations and the
+                                    customer
+                                    service was top-notch. I've recommended
+                                    it
+                                    to all my friends and family.
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Top Reviewer</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 7.5L12 2L3 7.5V16.5L12 22L21 16.5V7.5Z" stroke="#8552C3"
+                                                stroke-width="2" stroke-linejoin="round" />
+                                            <path d="M12 22V12" stroke="#8552C3" stroke-width="2" />
+                                            <path d="M21 7.5L12 12" stroke="#8552C3" stroke-width="2" />
+                                            <path d="M3 7.5L12 12" stroke="#8552C3" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Premium
+                                            Wireless Headphones</div>
+                                        <div class="review-card__product-category">Electronics</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">M</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Michael
+                                            Chen</div>
+                                        <div class="review-card__date">February
+                                            28, 2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star" style="color: #555;">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    Great value for the price. The design is
+                                    sleek and modern, and functionality is
+                                    exactly as described. Would have given 5
+                                    stars if battery life was a bit longer.
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Purchase</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="4" y="8" width="16" height="12" rx="2" stroke="#8552C3"
+                                                stroke-width="2" />
+                                            <path d="M16 12.01L16.01 11.9989" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8 4L8 8" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M16 4L16 8" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Smart
+                                            Home Assistant</div>
+                                        <div class="review-card__product-category">Smart
+                                            Home</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">J</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Jessica
+                                            Reynolds</div>
+                                        <div class="review-card__date">March
+                                            4,
+                                            2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    I'm absolutely in love with this
+                                    product!
+                                    The quality is exceptional, and it has
+                                    completely transformed my daily routine.
+                                    Fast shipping and beautiful packaging
+                                    too!
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Elite Member</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 6L20 6" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 6L5.00002 6" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M12 12H20" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 12L9.00002 12" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M9 18L20 18" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 18L5.00002 18" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M7 3L7 9" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M11 9L11 15" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M7 15L7 21" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Fitness
+                                            Tracker Pro</div>
+                                        <div class="review-card__product-category">Health
+                                            & Fitness</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">S</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Sarah
+                                            Johnson</div>
+                                        <div class="review-card__date">March
+                                            2,
+                                            2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    Absolutely amazing product! The quality
+                                    exceeded my expectations and the
+                                    customer
+                                    service was top-notch. I've recommended
+                                    it
+                                    to all my friends and family.
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Top Reviewer</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 7.5L12 2L3 7.5V16.5L12 22L21 16.5V7.5Z" stroke="#8552C3"
+                                                stroke-width="2" stroke-linejoin="round" />
+                                            <path d="M12 22V12" stroke="#8552C3" stroke-width="2" />
+                                            <path d="M21 7.5L12 12" stroke="#8552C3" stroke-width="2" />
+                                            <path d="M3 7.5L12 12" stroke="#8552C3" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Premium
+                                            Wireless Headphones</div>
+                                        <div class="review-card__product-category">Electronics</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">M</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Michael
+                                            Chen</div>
+                                        <div class="review-card__date">February
+                                            28, 2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star" style="color: #555;">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    Great value for the price. The design is
+                                    sleek and modern, and functionality is
+                                    exactly as described. Would have given 5
+                                    stars if battery life was a bit longer.
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Purchase</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="4" y="8" width="16" height="12" rx="2" stroke="#8552C3"
+                                                stroke-width="2" />
+                                            <path d="M16 12.01L16.01 11.9989" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8 4L8 8" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M16 4L16 8" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Smart
+                                            Home Assistant</div>
+                                        <div class="review-card__product-category">Smart
+                                            Home</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <div class="review-card__avatar">
+                                        <span class="avatar-initial">J</span>
+                                    </div>
+                                    <div class="review-card__user">
+                                        <div class="review-card__name">Jessica
+                                            Reynolds</div>
+                                        <div class="review-card__date">March
+                                            4,
+                                            2025</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-card__stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+
+                                <div class="review-card__content">
+                                    I'm absolutely in love with this
+                                    product!
+                                    The quality is exceptional, and it has
+                                    completely transformed my daily routine.
+                                    Fast shipping and beautiful packaging
+                                    too!
+                                </div>
+
+                                <div>
+                                    <div class="badge">Verified
+                                        Elite Member</div>
+                                </div>
+
+                                <div class="review-card__product">
+                                    <div class="review-card__product-img">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 6L20 6" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 6L5.00002 6" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M12 12H20" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 12L9.00002 12" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M9 18L20 18" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M3.80002 18L5.00002 18" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M7 3L7 9" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M11 9L11 15" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                            <path d="M7 15L7 21" stroke="#8552C3" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="review-card__product-name">Fitness
+                                            Tracker Pro</div>
+                                        <div class="review-card__product-category">Health
+                                            & Fitness</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer review End -->
+
+        <!-- feature start -->
+
+        <div class="container mt-4 mt-lg-0">
+            <div class="reviews-header">
+                <h1>GymSmart Features</h1>
+                <p>Discover why people love our products through their
+                    authentic experiences and honest feedback.</p>
+            </div>
+
+            <section class="features">
+                <div class="feature" id="feature1">
+                    <div class="feature-content">
+                        <h2 class="feature-title">AI Workout Coach</h2>
+                        <p class="feature-desc">Get real-time form feedback
+                            and coaching during your workouts. Our AI
+                            analyzes your movements through your device's
+                            camera and provides instant corrections to
+                            prevent injuries and maximize results.</p>
+                        <a href="#" class="cta">Try AI Coach Now</a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="ai-coach">
+                            <div class="coach-interface">
+                                <div class="coach-video">
+                                    <div class="humanoid" id="humanoid"></div>
+                                </div>
+                                <div class="pose-feedback">
+                                    <div>Great squat form! Try to keep your
+                                        knees aligned with your toes.</div>
+                                    <div class="feedback-details">
+                                        <div class="accuracy-meter">
+                                            <div class="accuracy-fill"></div>
+                                        </div>
+                                        <div class="percent">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature" id="feature2">
+                    <div class="feature-content">
+                        <h2 class="feature-title">Smart Progress
+                            Tracking</h2>
+                        <p class="feature-desc">Visualize your fitness
+                            journey with advanced analytics. Track
+                            weightlifting PRs, body measurements, workout
+                            consistency, and more. Our smart algorithm
+                            provides insights to help you break through
+                            plateaus.</p>
+                        <a href="#" class="cta">Explore Analytics</a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="stats-container">
+                            <div class="stats-header flex-wrap flex-lg-nowrap">
+                                <div class="stats-title">Strength
+                                    Progress</div>
+                                <div class="timeframe">
+                                    <div class="time-option">Week</div>
+                                    <div class="time-option active">Month</div>
+                                    <div class="time-option">Year</div>
+                                </div>
+                            </div>
+                            <div class="chart-container" id="chart"></div>
+                            <div class="chart-labels">
+                                <div>Jan</div>
+                                <div>Feb</div>
+                                <div>Mar</div>
+                                <div>Apr</div>
+                                <div>May</div>
+                                <div>Jun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature" id="feature3">
+                    <div class="feature-content">
+                        <h2 class="feature-title">Personalized Workout
+                            Planner</h2>
+                        <p class="feature-desc">Get custom workout routines
+                            tailored to your goals, equipment, and schedule.
+                            Our AI dynamically adjusts your plan based on
+                            your progress, recovery, and feedback to ensure
+                            optimal results.</p>
+                        <a href="#" class="cta">Get Your Plan</a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="workout-tracker">
+                            <div class="tracker-header flex-wrap flex-lg-nowrap p-2 p-lg-0">
+                                <div class="tracker-title">Today's Workout:
+                                    Upper Body Power</div>
+                                <div class="tracker-date">Thursday, March
+                                    6</div>
+                            </div>
+                            <div class="exercise-list">
+                                <div class="exercise-item">
+                                    <div class="exercise-name">Bench
+                                        Press</div>
+                                    <div class="exercise-details">
+                                        <div>4 × 8</div>
+                                        <div>75kg</div>
+                                    </div>
+                                </div>
+                                <div class="exercise-item">
+                                    <div class="exercise-name">Pull-ups</div>
+                                    <div class="exercise-details">
+                                        <div>4 × 10</div>
+                                        <div>Bodyweight</div>
+                                    </div>
+                                </div>
+                                <div class="exercise-item">
+                                    <div class="exercise-name">Shoulder
+                                        Press</div>
+                                    <div class="exercise-details">
+                                        <div>3 × 12</div>
+                                        <div>20kg</div>
+                                    </div>
+                                </div>
+                                <div class="exercise-item">
+                                    <div class="exercise-name">Barbell
+                                        Row</div>
+                                    <div class="exercise-details">
+                                        <div>3 × 10</div>
+                                        <div>60kg</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- feature End -->
+
+        <!-- people say about start -->
+
+        <div class="container">
+            <section class="testimonials-section">
+                <div class="section-header">
+                    <h2 class="section-title">What People Say About
+                        GymSmart</h2>
+                    <p class="section-subtitle">Real stories from real
+                        people who have transformed their fitness journey
+                        with GymSmart</p>
+                </div>
+
+                <div class="testimonials-container">
+                    <div class="testimonials-carousel" id="carousel">
+                        <div class="testimonial-card" data-index="0">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <div class="avatar-circle"></div>
+                                        <div class="avatar-initial">M</div>
+                                    </div>
+                                    <div class="user-details">
+                                        <div class="user-name">Michael
+                                            K.</div>
+                                        <div class="user-title">Fitness
+                                            Enthusiast, 34</div>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                </div>
+                                <div class="quote-mark">"</div>
+                                <div class="testimonial-text">
+                                    GymSmart completely transformed my
+                                    training. The AI coach corrected my
+                                    squat form which I had been doing wrong
+                                    for years! The personalized workout
+                                    plans adapt perfectly to my busy
+                                    schedule, and I've seen more progress in
+                                    3 months than I did all last year.
+                                </div>
+                                <div class="stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">27%</div>
+                                        <div class="stat-label">Strength
+                                            Gain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">12kg</div>
+                                        <div class="stat-label">Fat
+                                            Loss</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">9kg</div>
+                                        <div class="stat-label">Muscle
+                                            Gain</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card" data-index="1">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <div class="avatar-circle"></div>
+                                        <div class="avatar-initial">S</div>
+                                    </div>
+                                    <div class="user-details">
+                                        <div class="user-name">Sarah
+                                            J.</div>
+                                        <div class="user-title">Marathon
+                                            Runner, 29</div>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                </div>
+                                <div class="quote-mark">"</div>
+                                <div class="testimonial-text">
+                                    As a runner, I was neglecting strength
+                                    training until I found GymSmart. The app
+                                    created a perfect complementary routine
+                                    to my running schedule. The progress
+                                    tracking is so motivating, and I've
+                                    shaved 8 minutes off my marathon time
+                                    thanks to the improved core and leg
+                                    strength!
+                                </div>
+                                <div class="stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">15%</div>
+                                        <div class="stat-label">Speed
+                                            Increase</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">8min</div>
+                                        <div class="stat-label">Marathon
+                                            PR</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">32%</div>
+                                        <div class="stat-label">Endurance
+                                            Boost</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card" data-index="2">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <div class="avatar-circle"></div>
+                                        <div class="avatar-initial">D</div>
+                                    </div>
+                                    <div class="user-details">
+                                        <div class="user-name">David
+                                            L.</div>
+                                        <div class="user-title">Software
+                                            Developer, 41</div>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                    <div class="star">★</div>
+                                </div>
+                                <div class="quote-mark">"</div>
+                                <div class="testimonial-text">
+                                    Working from home made it difficult to
+                                    stay active. GymSmart's home workout
+                                    routines using minimal equipment have
+                                    been a game-changer.
+                                </div>
+                                <div class="stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">94%</div>
+                                        <div class="stat-label">Consistency</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">0</div>
+                                        <div class="stat-label">Back
+                                            Pain</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">6kg</div>
+                                        <div class="stat-label">Weight
+                                            Loss</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="control-btn" id="prevBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="control-btn" id="nextBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="testimonial-indicators" id="indicators">
+                    <div class="indicator active" data-index="0"></div>
+                    <div class="indicator" data-index="1"></div>
+                    <div class="indicator" data-index="2"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- people say about End -->
+
+        <!-- why choose gym start -->
+
+        <div class="container">
+            <section class="why-choose-section">
+                <div class="bg-circle circle-1"></div>
+                <div class="bg-circle circle-2"></div>
+
+                <div class="floating-badge badge-1">98% Success Rate</div>
+                <div class="floating-badge badge-2">30-Day Money Back</div>
+
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose GymSmart?</h2>
+                    <p class="section-subtitle">Experience the future of
+                        fitness training with technology that adapts to your
+                        unique needs and goals</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card" id="card1">
+                        <div class="badge">Most Popular</div>
+                        <div class="benefit-icon mx-auto mx-lg-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Personalized
+                            Experience</h3>
+                        <p class="benefit-desc">Unlike generic fitness apps,
+                            GymSmart uses advanced AI to create truly
+                            personalized workouts based on your goals,
+                            fitness level, available equipment, and even
+                            your recovery capacity. The more you use it, the
+                            smarter it gets.</p>
+                        <div class="benefit-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">87%</div>
+                                <div class="stat-label">faster results</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card" id="card2">
+                        <div class="benefit-icon mx-auto mx-lg-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Real-Time Form
+                            Correction</h3>
+                        <p class="benefit-desc">Our advanced computer vision
+                            technology provides instant feedback on your
+                            exercise form, reducing injury risk and
+                            maximizing effectiveness. It's like having a
+                            personal trainer watching your every rep,
+                            without the hourly cost.</p>
+                        <div class="benefit-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">92%</div>
+                                <div class="stat-label">reduced
+                                    injuries</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card" id="card3">
+                        <div class="benefit-icon mx-auto mx-lg-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Data-Driven Progress</h3>
+                        <p class="benefit-desc">Stop guessing if your
+                            workouts are effective. GymSmart tracks every
+                            aspect of your fitness journey with detailed
+                            analytics and visualizations that show exactly
+                            what's working and what needs adjustment for
+                            optimal results.</p>
+                        <div class="benefit-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">3.5x</div>
+                                <div class="stat-label">faster
+                                    progress</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card" id="card4">
+                        <div class="benefit-icon mx-auto mx-lg-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Expert-Backed Science</h3>
+                        <p class="benefit-desc">Developed by a team of
+                            exercise physiologists, sports scientists, and
+                            fitness professionals. Every workout, exercise,
+                            and recommendation is grounded in the latest
+                            research for maximum effectiveness and
+                            safety.</p>
+                        <div class="benefit-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">15+</div>
+                                <div class="stat-label">fitness
+                                    experts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-section">
+                    <h3 class="comparison-title">GymSmart vs. Traditional
+                        Options</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>GymSmart</th>
+                                <th>Regular Gym Apps</th>
+                                <th>Personal Trainer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight">
+                                <td>Personalized Workouts</td>
+                                <td class="">
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td class="non-check-icon">✕</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Real-time Form Correction</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td class="non-check-icon">✕</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>Available 24/7</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td class="non-check-icon">✕</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Progress Analytics</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td class="non-check-icon">✕</td>
+                                <td class="non-check-icon">✕</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>Adapts To Your Progress</td>
+                                <td>
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                                <td class="non-check-icon">✕</td>
+                                <td >
+                                    <div class="check-icon mx-auto">✓</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Monthly Cost</td>
+                                <td>₹10,000</td>
+                                <td>₹15,000</td>
+                                <td>₹30,000+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="why-us-section">
+                    <a href="#" class="why-us-button">Start Your Free
+                        Trial</a>
+                    <p class="guarantee-text">30-day money-back guarantee.
+                        No questions asked.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- why choose gym End -->
+
+        <!-- faq start -->
+
+        <section>
+            <div class="purple-glow d-none d-lg-block" id="glow1"></div>
+            <div class="purple-glow d-none d-lg-block" id="glow2"></div>
+
+            <div class="container">
+                <div class="faq-header">
+                    <h1>Frequently Asked Questions</h1>
+                    <p class="faq-description">Find answers to the most common
+                        questions about our products and services.</p>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for questions..." id="search-faq">
+                    <div class="search-icon">🔍</div>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">How do I create an
+                            account?</div>
+                        <div class="faq-answer">
+                            <p>Creating an account is simple! Click on the <span class="highlight">Sign Up</span> button
+                                in
+                                the top right corner of our homepage. Fill in
+                                your details, verify your email address, and
+                                you're all set to go!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What payment methods do you
+                            accept?</div>
+                        <div class="faq-answer">
+                            <p>We accept a variety of payment methods including
+                                credit/debit cards (Visa, MasterCard, American
+                                Express), PayPal, and bank transfers. All
+                                payments are securely processed and encrypted
+                                for your safety.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How can I reset my
+                            password?</div>
+                        <div class="faq-answer">
+                            <p>To reset your password, click on the <span class="highlight">Forgot Password</span>
+                                link on the login page. Enter your registered
+                                email address, and we'll send you a password
+                                reset link. Follow the instructions in the email
+                                to create a new password.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What is your refund
+                            policy?</div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day money-back guarantee on all our
+                                products. If you're not satisfied with your
+                                purchase, please contact our customer support
+                                team within 30 days of your purchase, and we'll
+                                process your refund.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How can I contact customer
+                            support?</div>
+                        <div class="faq-answer">
+                            <p>You can reach our customer support team via email
+                                at <span class="highlight">support@gymsmart.in</span>,
+                                through the live chat on our website, or by
+                                calling our toll-free number <span class="highlight">+91 83479 77555</span>.
+                                Our support hours are Monday to Friday, 9 AM to
+                                6 PM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq End -->
+
+        <!-- blog start -->
+
+        <section>
+            <div class="purple-glow d-none d-lg-block" id="glow1"></div>
+            <div class="purple-glow d-none d-lg-block" id="glow2"></div>
+            <div class="purple-glow d-none d-lg block" id="glow3"></div>
+
+            <div class="container">
+                <div class="header">
+                    <h1>Latest Updates</h1>
+                    <p>Stay informed with our most recent news, features,
+                        and announcements.</p>
+                </div>
+
+                <div class="filter-container align-items-center">
+                    <button class="filter-btn active" data-filter="all">All
+                        Updates</button>
+                    <button class="filter-btn" data-filter="feature">New
+                        Features</button>
+                    <button class="filter-btn" data-filter="release">Releases</button>
+                    <button class="filter-btn" data-filter="news">Company
+                        News</button>
+                </div>
+
+                <div class="updates-container">
+                    <div class="update-card" data-category="feature">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">March 5, 2025</div>
+                            <div class="update-tag">New Feature</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Introducing AI-Powered
+                                Content Generation</h3>
+                            <p class="update-excerpt">Our new AI tools allow
+                                you to create stunning content with just a
+                                few clicks. Generate blog posts, social
+                                media captions, and more with our advanced
+                                natural language processing.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">Alex
+                                        Johnson</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card" data-category="release">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">March 2, 2025</div>
+                            <div class="update-tag">Release</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Version 3.5 Released
+                                with Enhanced Performance</h3>
+                            <p class="update-excerpt">We're excited to
+                                announce our latest update that brings
+                                significant performance improvements. Enjoy
+                                faster loading times, better resource
+                                management, and an optimized user
+                                experience.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">Sarah
+                                        Chen</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card" data-category="news">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">February 28, 2025</div>
+                            <div class="update-tag">Company News</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Expanding Our Global
+                                Reach with New Office in Tokyo</h3>
+                            <p class="update-excerpt">We're thrilled to
+                                announce the opening of our new office in
+                                Tokyo, Japan. This expansion allows us to
+                                better serve our Asian market and bring on
+                                board talented developers from the
+                                region.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">Michael
+                                        Wong</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card" data-category="feature">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">February 25, 2025</div>
+                            <div class="update-tag">New Feature</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Advanced Analytics
+                                Dashboard Now Available</h3>
+                            <p class="update-excerpt">Track your performance
+                                with our new analytics dashboard. Get
+                                detailed insights, custom reports, and
+                                actionable recommendations to optimize your
+                                strategies.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">Emily
+                                        Rodriguez</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card" data-category="release">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">February 20, 2025</div>
+                            <div class="update-tag">Release</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Mobile App Update: New
+                                UI and Dark Mode</h3>
+                            <p class="update-excerpt">Our latest mobile app
+                                update brings a completely refreshed user
+                                interface and the much-requested dark mode.
+                                Enjoy a more intuitive experience with
+                                improved accessibility features.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">David
+                                        Kim</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card" data-category="news">
+                        <div class="update-image">
+                            <img src="/api/placeholder/400/320" alt="Update Image">
+                            <div class="update-date">February 15, 2025</div>
+                            <div class="update-tag">Company News</div>
+                        </div>
+                        <div class="update-content">
+                            <h3 class="update-title">Partnership
+                                Announcement: Collaboration with
+                                TechGiant</h3>
+                            <p class="update-excerpt">We're excited to
+                                announce our strategic partnership with
+                                TechGiant. This collaboration will bring
+                                innovative solutions and expanded
+                                capabilities to our platform.</p>
+                            <div class="update-meta">
+                                <div class="update-author">
+                                    <div class="author-avatar">
+                                        <img src="/api/placeholder/50/50" alt="Author">
+                                    </div>
+                                    <span class="author-name">Jessica
+                                        Turner</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="load-more">Load More Updates</button>
+            </div>
+        </section>
+
+        <!-- blog End -->
+
+        <!-- news latter start -->
+
+        <section>
+            <div class="particles-container" id="particles-container"></div>
+
+            <div class="purple-glow d-none d-lg-block" id="glow1"></div>
+            <div class="purple-glow d-none d-lg-block" id="glow2"></div>
+
+            <div class="container">
+                <div class="newsletter-card" id="newsletter-form">
+                    <div class="newsletter-image">
+                        <div class="geometric-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                            <div class="shape shape-4"></div>
+                        </div>
+                        <div class="image-overlay"></div>
+                        <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="white"
+                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12 15L14 13M12 15L10 13M12 15C12 15 15 17 17 16" stroke="white" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <div class="newsletter-content">
+                        <div class="newsletter-badge">Exclusive Content</div>
+                        <h2 class="newsletter-title">Join our <span>Growth Newsletter</span> for actionable insights
+                        </h2>
+                        <p class="newsletter-description">Get weekly expert tips, industry trends, and growth strategies
+                            delivered straight to your inbox. Join thousands of professionals who are leveling up their
+                            skills.</p>
+
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="check-icon">✓</div>
+                                <span>Weekly growth strategies and case studies</span>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="check-icon">✓</div>
+                                <span>Early access to our premium resources</span>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="check-icon">✓</div>
+                                <span>Exclusive tools and templates to accelerate growth</span>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="check-icon">✓</div>
+                                <span>Community insights from industry experts</span>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-form-demo">
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Enter your email address"
+                                    id="email-input">
+                            </div>
+                            <button class="subscribe-btn" id="subscribe-btn">Subscribe to Newsletter</button>
+                            <p class="privacy-text mt-5 mt-lg-4">We respect your privacy. Unsubscribe at any time. <a
+                                    href="#">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsletter-card success-message justify-content-center" id="success-message">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <h2 class="success-title">You're all set!</h2>
+                        <p class="success-text">Thank you for subscribing to our Growth Newsletter. Check your inbox for
+                            a confirmation email and exciting content coming your way soon!</p>
+                        <button class="subscribe-btn" id="back-btn">Back to Form</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- news latter End -->
+
+        <!-- demo start -->
+
+        <section class="hero my-5 last_section">
+            <div class="floating-shape circle circle-1"></div>
+            <div class="floating-shape circle circle-2"></div>
+
+            <div class="hero-content">
+                <h1>Manage Your Gym <span class="hero-highlight">Smartly</span> With GymSmart</h1>
+                <p>Streamline your gym operations, boost member engagement, and grow your fitness business with our
+                    all-in-one gym management software solution.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn">Get Started</button>
+                    <button class="secondary-btn">Watch Demo</button>
+                </div>
+            </div>
+
+            <img src="https://ajasys.com/img/h-banner-2.png" alt="GymSmart Dashboard" class="hero-image d-lg-none d-xl-block">
+        </section>
+
+        <!-- demo End -->
+
+        <!-- footer start -->
+
+        <footer class="footer">
+            <div class="footer-wave"></div>
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/main-logo.png" alt="">
+                    </div>
+                    <p>GymSmart is the ultimate gym management solution designed to streamline operations, enhance
+                        member experience, and drive business growth for fitness businesses of all sizes.</p>
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </div>
+                        <div class="social-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="social-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div class="social-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Help Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Tutorials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                API Documentation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Community
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                                Case Studies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to get the latest updates, news, and special offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div>
+                    <p>Download our mobile app:</p>
+                    <div class="app-downloads">
+                        <div class="app-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5"></path>
+                                <path d="M16 3v4"></path>
+                                <path d="M8 3v4"></path>
+                                <path d="M3 11h18"></path>
+                                <path d="M19 16v3"></path>
+                                <path d="M22 19l-3 3-3-3"></path>
+                            </svg>
+                            <div class="app-btn-text">
+                                <small>Download on</small>
+                                <span>App Store</span>
+                            </div>
+                        </div>
+                        <div class="app-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <div class="app-btn-text">
+                                <small>Get it on</small>
+                                <span>Google Play</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-hexagon footer-decoration"></div>
+            <div class="footer-circle footer-decoration"></div>
+
+            <div class="footer-bottom">
+                <p>© 2025 GymSmart. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="back-to-top">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </div>
+
+        <!-- footer End -->
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+        const mySwiper = new Swiper('.mySwiper', {
+            slidesPerView: 1, // Default for small screens
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
